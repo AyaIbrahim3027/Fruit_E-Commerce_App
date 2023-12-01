@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_ecommerce_app/Core/utils/size_config.dart';
 import 'package:fruit_ecommerce_app/Features/On%20Boarding/presentaion/on_boarding_view.dart';
 import 'package:fruit_ecommerce_app/Features/Splash/presentation/widgets/text_fading_transition.dart';
 import 'package:fruit_ecommerce_app/constants.dart';
@@ -33,6 +34,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
