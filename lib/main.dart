@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_ecommerce_app/Core/constants.dart';
 import 'package:get/get.dart';
 
 import 'Features/Splash/presentation/splash_view.dart';
@@ -12,6 +13,7 @@ class FruitsMarket extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      theme: ThemeData(fontFamily: kFont),
       debugShowCheckedModeBanner: false,
       home: SplashView(),
     );
