@@ -16,7 +16,6 @@ class TextFadingTransition extends StatelessWidget {
         'Fruit Market',
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontFamily: 'Poppins',
           fontSize: 51,
           fontWeight: FontWeight.bold,
           color: Color(0xffffffff),
