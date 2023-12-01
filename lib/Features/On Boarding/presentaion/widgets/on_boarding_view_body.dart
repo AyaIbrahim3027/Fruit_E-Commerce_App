@@ -1,6 +1,4 @@
-import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:fruit_ecommerce_app/Core/constants.dart';
 import 'package:fruit_ecommerce_app/Core/utils/size_config.dart';
 import 'package:fruit_ecommerce_app/Core/widgets/custom_buttons.dart';
 import 'package:fruit_ecommerce_app/Features/On%20Boarding/presentaion/widgets/custom_page_view.dart';
