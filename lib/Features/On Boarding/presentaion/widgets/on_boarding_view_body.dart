@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_ecommerce_app/Core/utils/size_config.dart';
-import 'package:fruit_ecommerce_app/Core/widgets/custom_buttons.dart';
+import 'package:fruit_ecommerce_app/Core/widgets/custom_general_button.dart';
 import 'package:fruit_ecommerce_app/Features/On%20Boarding/presentaion/widgets/custom_page_view.dart';
+import 'package:get/get.dart';
 
+import '../../../Auth/presentation/views/login/login_view.dart';
 import 'custom_Indicator.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
@@ -59,6 +61,16 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           left: SizeConfig.defaultSize! * 10,
           right: SizeConfig.defaultSize! * 10,
           child: CustomGeneralButton(
+            onTap: () {
+              if (pageController!.page! < 2) {
+                pageController?.nextPage(
+                    duration: const Duration(milliseconds: 500),
+                    curve: Curves.easeIn);
+              } else {
+                Get.to(() => const LoginView(),
+                    transition: Transition.rightToLeft ,);
+              }
+            },
             text: pageController!.hasClients
                 ? (pageController?.page == 2 ? 'Get Started' : 'Next')
                 : 'Next',
